@@ -1,8 +1,9 @@
 import React from 'react'
+import styles from "./page.module.css"
 
 const Conseil = () => {
   return (
-    <div>Liste du Conseil d'Administration</div>
+    <div className={styles.container}>Liste du Conseil d'Administration</div>
   )
 }
 

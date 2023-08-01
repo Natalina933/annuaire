@@ -1,8 +1,9 @@
 import React from 'react'
+import styles from "./page.module.css"
 
 const Groupements = () => {
   return (
-    <div>liste Groupements</div>
+    <div className={styles.container}>liste Groupements</div>
   )
 }
 

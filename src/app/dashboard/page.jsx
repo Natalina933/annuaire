@@ -1,8 +1,9 @@
 import React from 'react'
+import styles from "./page.module.css"
 
 const Dashboard = () => {
   return (
-    <div>liste Dashboard</div>
+    <div className={styles.container}>liste Dashboard</div>
   )
 }
 

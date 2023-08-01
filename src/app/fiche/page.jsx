@@ -1,8 +1,8 @@
 import React from 'react'
-
+import styles from "./page.module.css"
 const Fiche = () => {
   return (
-    <div>Fiche Groupements</div>
+    <div className={styles.container}>Fiche Groupements</div>
   )
 }
 
