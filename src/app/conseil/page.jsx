@@ -1,9 +1,9 @@
 import React from 'react'
 
-const ConseilAdm = () => {
+const Conseil = () => {
   return (
     <div>Liste du Conseil d'Administration</div>
   )
 }
 
-export default ConseilAdm
+export default Conseil
