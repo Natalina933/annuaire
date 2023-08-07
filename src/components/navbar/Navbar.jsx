@@ -7,6 +7,7 @@ const links = [
         id: 1,
         title: "Home",
         url: "/",
+        icon: faHome,
     },
     {
         id: 2,
