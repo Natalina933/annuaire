@@ -1,4 +1,28 @@
-.container{
-    color: rgb(203, 133, 133);
-    background-color: rgb(29, 45, 104);
-  }
+.container {
+  color: rgb(203, 133, 133);
+  background-color: rgb(29, 45, 104);
+}
+
+
+/* .item {
+  } */
+
+/* .header {
+
+} */
+
+.img {
+  height: 32%;
+  width: 39%;
+  object-fit: cover;
+  color: transparent;
+}
+
+.title {
+  font-size: 24px;
+  margin-top: 20px;
+}
+
+/* .list {
+
+  } */
