@@ -3,7 +3,7 @@ import styles from "./page.module.css"
 
 const Dashboard = () => {
   return (
-    <div className={styles.container}>liste Dashboard</div>
+    <section className={styles.container}>liste Dashboard</section>
   )
 }
 

@@ -2,10 +2,10 @@ import React from "react";
 
 const FicheLayout = ({ children }) => {
     return (
-        <div>
+        <section>
             <h1>C'est l'entête fiche groupement</h1>
             {children}
-        </div>
+        </section>
     );
 };
 

@@ -3,7 +3,7 @@ import styles from "./page.module.css"
 
 const FichePost = () => {
   return (
-    <div className={styles.container}>FichePost groupements</div>
+    <section className={styles.container}>FichePost groupements</section>
   )
 }
 

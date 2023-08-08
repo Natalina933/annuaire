@@ -10,8 +10,8 @@ const Conseil = ({ grade, nom, prenom, groupement }) => {
   const componentRef = useRef(null);
 
   return (
-    <div className={styles.container}>
-      <div className={styles.item} ref={componentRef}>
+    <main className={styles.container}>
+      <section className={styles.item} ref={componentRef}>
         <header>
           <Image src={Header} className={styles.img} alt='Image header' />
           <div className={styles.imgText}>
@@ -32,8 +32,8 @@ const Conseil = ({ grade, nom, prenom, groupement }) => {
           <h3>{grade} {prenom} {nom}</h3>
           <p>Groupement {groupement}</p>
         </ul>
-      </div>
-      <div className={styles.item}>
+      </section>
+      <section className={styles.item}>
         <h1 className={styles.title}>Les Membres du Conseil d'Administration</h1>
         <ol>
           <li>
@@ -41,8 +41,8 @@ const Conseil = ({ grade, nom, prenom, groupement }) => {
             <p>Groupement {groupement}</p>
           </li>
         </ol>
-      </div>
-      <div className={`${styles.button}`}>
+      </section>
+      <section className={`${styles.button}`}>
         <ReactToPrint
           trigger={() => (
             <Button
@@ -52,8 +52,8 @@ const Conseil = ({ grade, nom, prenom, groupement }) => {
           )}
           content={() => componentRef.current}
         />
-      </div>
-    </div>
+      </section>
+    </main>
   );
 };
 

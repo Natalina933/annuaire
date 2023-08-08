@@ -4,7 +4,7 @@ import styles from "./page.module.css"
 
 const Register = () => {
   return (
-    <div className={styles.container}>Register</div>
+    <section className={styles.container}>Register</section>
   )
 }
 

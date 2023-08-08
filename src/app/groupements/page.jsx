@@ -3,7 +3,7 @@ import styles from "./page.module.css"
 
 const Groupements = () => {
   return (
-    <div className={styles.container}>liste Groupements</div>
+    <section className={styles.container}>liste Groupements</section>
   )
 }
 

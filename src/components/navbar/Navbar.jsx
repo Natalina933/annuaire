@@ -1,58 +1,96 @@
 "use client"
+
 import Link from "next/link";
-import React from "react";
-import styles from "./navbar.module.css"
+import React, { useState, useEffect } from "react";
+import styles from "./navbar.module.css";
+import { FaHome } from "react-icons/fa";
+
 const links = [
     {
         id: 1,
         title: "Home",
         url: "/",
-        icon: faHome,
+        icon: <FaHome />,
     },
     {
         id: 2,
         title: "Conseil d'Administration",
         url: "/conseil",
+        icon: <FaHome />,
+
     },
     {
         id: 3,
         title: "Fiche",
         url: "/fiche",
+        icon: <FaHome />,
+
     },
     {
         id: 4,
         title: "Groupements",
         url: "/groupements",
+        icon: <FaHome />,
+
     },
     {
         id: 5,
         title: "Dashbord",
         url: "/dashboard",
+        icon: <FaHome />,
+
     },
     {
         id: 6,
         title: "Contact",
         url: "/contact",
+        
     },
-]
-
+];
 const Navbar = () => {
+    const [deviceType, setDeviceType] = useState("desktop");
+
+    useEffect(() => {
+        const handleResize = () => {
+            const width = window.innerWidth;
+            if (width <= 576) {
+                setDeviceType("mobile");
+            } else if (width <= 992) {
+                setDeviceType("tablet");
+            } else {
+                setDeviceType("desktop");
+            }
+        };
+
+        handleResize(); // Appel initial
+        window.addEventListener("resize", handleResize);
+
+        return () => {
+            window.removeEventListener("resize", handleResize);
+        };
+    }, []);
+
     return (
-        <div className={styles.container}>
-            <Link href="/" className={styles.logo}>ANOCR</Link>
-            <div className={styles.links}>
+        <nav className={`${styles.container} ${styles[deviceType]}`}>
+            <Link href="/" className={styles.logo}>
+                ANOCR
+            </Link>
+            <section className={`${styles.links} ${styles[deviceType]}`}>
                 {links.map((link) => (
                     <Link key={link.id} href={link.url} className={styles.link}>
-                        {link.title}
+                        {deviceType === "desktop" ? link.title : link.icon}
                     </Link>
                 ))}
                 <button
                     className={styles.logout}
                     onClick={() => {
-                        console.log("logged out")
-                    }}>Déconnexion</button>
-            </div>
-        </div>
+                        console.log("Déconnexion effectuée");
+                    }}
+                >
+                    Déconnexion
+                </button>
+            </section>
+        </nav>
     );
 };
 

@@ -30,7 +30,18 @@
   background-color: #3d3d3d;
   text-decoration: underline;
 }
-
+.navbar.active .links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: absolute;
+  top: 100px;
+  left: 0;
+  width: 100%;
+  background-color: #285e85;
+  z-index: 1;
+  padding: 10px 0;
+}
 .logout {
   padding: 5px;
   border: none;
@@ -42,4 +53,27 @@
 
 .logout:hover {
   background-color: #439f6d;
+}
+@media screen and (min-width: 768px) {
+  .container {
+    height: auto;
+    flex-direction: row;
+    padding: 10px 20px;
+  }
+
+  .links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    position: static;
+    background-color: transparent;
+    padding: 0;
+  }
+
+  .navbar.active .links {
+    flex-direction: row;
+    position: static;
+    background-color: transparent;
+    padding: 0;
+  }
 }

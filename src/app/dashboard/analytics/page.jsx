@@ -4,7 +4,7 @@ import styles from "./page.module.css"
 
 const Analytics = () => {
   return (
-    <div className={styles.container}>Analytics</div>
+    <section className={styles.container}>Analytics</section>
   )
 }
 
