@@ -6,30 +6,35 @@ import Button from '@/components/button/Button';
 import ReactToPrint from 'react-to-print';
 import Header from "public/image/arc.jpg";
 
-const Conseil = ({ grade, nom, prenom, groupement }) => {
-  const componentRef = useRef(null);
-  const BureauData = [
-    { grade: "Le Président", prenom: "Prénom1", nom: "Nom1", groupement: "Groupement1" },
-    { grade: "Le Vice-président", prenom: "Prénom2", nom: "Nom2", groupement: "Groupement2" },
-    { grade: "Le Trésorier", prenom: "Prénom3", nom: "Nom3", groupement: "Groupement3" },
-  ];
-  const BoardMembers = [
-    { grade: "Le Président", prenom: "Prénom1", nom: "Nom1", groupement: "Groupement1" },
-    { grade: "Le Secrétaire", prenom: "Prénom2", nom: "Nom2", groupement: "Groupement2" },
-    { grade: "Le Trésorier", prenom: "Prénom3", nom: "Nom3", groupement: "Groupement3" },
-  ];
-
-  const newLocal = <section className={styles.item}>
+const MemberList = ({ members }) => (
+  <section className={styles.item}>
     <h1 className={styles.title}>Les Membres du Conseil d'Administration</h1>
-    <ol>
-      {BoardMembers.map((member, index) => (
+    <ul>
+      {members.map((member, index) => (
         <li key={index}>
           <h3>{member.grade} {member.prenom} {member.nom}</h3>
           <p>Groupement {member.groupement}</p>
         </li>
       ))}
-    </ol>
-  </section>;
+    </ul>
+  </section>
+);
+
+const Conseil = () => {
+  const componentRef = useRef(null);
+
+  const BureauData = [
+    { grade: "Le Président", prenom: "Michel", nom: "OLHAGARAY", groupement: "Groupement1" },
+    { grade: "Le Secrétaire", prenom: "Prénom2", nom: "Nom2", groupement: "Groupement2" },
+    { grade: "Le Trésorier", prenom: "Prénom3", nom: "Nom3", groupement: "Groupement3" },
+  ];
+  
+  const BoardMembers = [
+    { grade: "Le Président", prenom: "Prénom1", nom: "Nom1", groupement: "Groupement1" },
+    { grade: "Le Vice-président", prenom: "Prénom2", nom: "Nom2", groupement: "Groupement2" },
+    { grade: "Le Trésorier", prenom: "Prénom3", nom: "Nom3", groupement: "Groupement3" },
+  ];
+
   return (
     <main className={styles.container}>
       <section className={styles.item} ref={componentRef}>
@@ -51,8 +56,10 @@ const Conseil = ({ grade, nom, prenom, groupement }) => {
           ))}
         </ul>
       </section>
-      {newLocal}
-      <section className={`${styles.button}`}>
+      
+      <MemberList members={BoardMembers} />
+      
+      <section className={styles.button}>
         <ReactToPrint
           trigger={() => (
             <Button
