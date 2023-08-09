@@ -15,7 +15,6 @@
 .links {
   display: flex;
   align-items: center;
-  gap: 20px;
 }
 
 .link {
@@ -64,7 +63,6 @@
   .links {
     display: flex;
     align-items: center;
-    gap: 20px;
     position: static;
     background-color: transparent;
     padding: 0;

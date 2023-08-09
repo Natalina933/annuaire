@@ -3,7 +3,7 @@
 import Link from "next/link";
 import React, { useState, useEffect } from "react";
 import styles from "./navbar.module.css";
-import { FaHome } from "react-icons/fa";
+import { FaHome, FaAddressCard, FaUsers, FaListAlt, FaChartBar, FaEnvelopeOpenText } from "react-icons/fa";
 
 const links = [
     {
@@ -16,35 +16,36 @@ const links = [
         id: 2,
         title: "Conseil d'Administration",
         url: "/conseil",
-        icon: <FaHome />,
+        icon: <FaUsers />,
 
     },
     {
         id: 3,
         title: "Fiche",
         url: "/fiche",
-        icon: <FaHome />,
+        icon: <FaAddressCard />,
 
     },
     {
         id: 4,
         title: "Groupements",
         url: "/groupements",
-        icon: <FaHome />,
+        icon: <FaListAlt />,
 
     },
     {
         id: 5,
         title: "Dashbord",
         url: "/dashboard",
-        icon: <FaHome />,
+        icon: <FaChartBar />,
 
     },
     {
         id: 6,
         title: "Contact",
-        url: "/contact",
-        
+        url: "/FaEnvelopeOpenText",
+        icon: <FaEnvelopeOpenText />
+
     },
 ];
 const Navbar = () => {
