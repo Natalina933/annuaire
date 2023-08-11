@@ -18,12 +18,12 @@
 .item li {
   color: black; 
 }
-.header {
+/* .header {
   position: relative;
   height: 265px;
   width: 100%;
   overflow: hidden;
-}
+} */
 
 .img {
   width: 100%;
