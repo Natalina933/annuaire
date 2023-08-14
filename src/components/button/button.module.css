@@ -1,18 +1,55 @@
 .container {
-
-  margin-top: 15px;
-  padding: 1rem 2rem;
-  background-color: #194c33;
-  color: #fff;
+  padding: 0.8rem 1.5rem;
+  background-color: #2d3e50;
+  color: #ffffff;
   border: none;
-  border-radius: 5px;
+  border-radius: 8px;
   font-size: 16px;
   cursor: pointer;
-  transition: background-color 0.3s;
-  width: max-content;
-
+  transition: background-color 0.3s, color 0.3s;
+  align-items: center;
+  gap: 6px;
 }
 
 .container:hover {
-  background-color: #219146;
+  background-color: #34495e;
+}
+
+.icon {
+  font-size: 20px;
+}
+
+.text {
+  font-weight: bold;
+}
+.buttonSection {
+  display: flex;
+  justify-content: flex-end; 
+  margin-top: 20px;
+}
+
+.buttonWrapper {
+  display: flex;
+  gap: 10px;
+}
+/* Styles pour tablettes */
+@media screen and (min-width: 768px) {
+  .container {
+    font-size: 18px;
+  }
+
+  .icon {
+    font-size: 22px;
+  }
+}
+
+/* Styles pour ordinateurs */
+@media screen and (min-width: 1024px) {
+  .container {
+    font-size: 20px;
+  }
+
+  .icon {
+    font-size: 24px;
+  }
 }

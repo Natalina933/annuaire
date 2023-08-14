@@ -53,6 +53,11 @@
 .logout:hover {
   background-color: #439f6d;
 }
+.buttonSection {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
 @media screen and (min-width: 768px) {
   .container {
     height: auto;
@@ -74,4 +79,5 @@
     background-color: transparent;
     padding: 0;
   }
+  
 }
