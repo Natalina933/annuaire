@@ -58,3 +58,11 @@
         margin: 0;
     }
 }
+
+@media (min-width:900px) {
+    .container{
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,43 @@
+[
+    {
+        "id": 1,
+        "title": "Home",
+        "url": "/",
+        "icon": "FaHome"
+    },
+    {
+        "id": 2,
+        "title": "Conseil d'Administration",
+        "url": "/conseil",
+        "icon": "FaUsers"
+
+    },
+    {
+        "id": 3,
+        "title": "Groupements",
+        "url": "/groupements",
+        "icon": "FaListAlt"
+
+    }, {
+        "id": 4,
+        "title": "Fiche",
+        "url": "/fiche",
+        "icon": "FaAddressCard"
+
+    },
+
+    {
+        "id": 5,
+        "title": "Dashbord",
+        "url": "/dashboard",
+        "icon": "FaChartBar"
+
+    },
+    {
+        "id": 6,
+        "title": "Contact",
+        "url": "/FaEnvelopeOpenText",
+        "icon": "FaEnvelopeOpenText"
+
+    }
+]

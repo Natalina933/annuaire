@@ -1,0 +1,8 @@
+[
+    { "cat": "Membres du Bureau", "poste": "Le Président", "grade": "Vice-Amiral", "prenom": "Michel", "nom": "OLHAGARAY", "groupement": "Groupement1" },
+    { "cat": "Membres du Bureau", "poste": "Le Vice-président", "grade": "Grade", "prenom": "Prénom2", "nom": "Nom2", "groupement": "Groupement2" },
+    { "cat": "Membres du Bureau", "poste": "Le Vice-président", "grade": "Grade", "prenom": "Prénom2", "nom": "Nom2", "groupement": "Groupement2" },
+    { "cat": "Membres du Bureau", "poste": "Le Vice-président", "grade": "Grade", "prenom": "Prénom2", "nom": "Nom2", "groupement": "Groupement2" },
+    { "cat": "Membres du Bureau", "poste": "Le Vice-président", "grade": "Grade", "prenom": "Prénom2", "nom": "Nom2", "groupement": "Groupement2" },
+    { "cat": "Membres du Bureau", "poste": "Le Trésorier", "grade": "Le Trésorier", "prenom": "Prénom3", "nom": "Nom3", "groupement": "Groupement3" }
+]

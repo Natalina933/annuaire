@@ -1,10 +1,10 @@
 import React from 'react';
 import styles from './conseilList.module.css';
 
-function ConseilList({ members }) {
+function ConseilList({ members, title }) {
     return (
         <div className={styles.container}>
-            <h1 className={styles.title}>Le Bureau de l'Association</h1>
+            <h1 className={styles.title}>{title}</h1>
             <ul className={styles.list}>
                 {members.map((person, index) => (
                     <li key={index} className={styles.listItem}>
@@ -17,6 +17,7 @@ function ConseilList({ members }) {
                     </li>
                 ))}
             </ul>
+            
         </div>
     );
 }

@@ -16,14 +16,15 @@
   width: 100%;
 }
 .item li {
-  color: black; 
+  color: black;
 }
-/* .header {
+
+.header {
   position: relative;
   height: 265px;
   width: 100%;
   overflow: hidden;
-} */
+}
 
 .img {
   width: 100%;
@@ -33,23 +34,18 @@
 
 .imgText {
   position: absolute;
-  top: 42%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
   color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px 20px;
 }
 
 .imgText h1 {
   font-size: 28px;
   margin-bottom: 10px;
-
-}
-
-.imgText h1,
-.imgText h2 {
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 10px 20px;
 }
 
 .imgText h2 {
@@ -80,37 +76,17 @@
 .list p {
   margin: 5px 0;
 }
-
-/* .button {
-  display: flex;
-  justify-content: center;
-  margin-top: 20px;
+.printIcon {
+  font-size: 20px; 
+  color: whitesmoke; 
 }
-
-.button button {
-  background-color: #007bff;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease-in-out;
-}
-
-.button button:hover {
-  background-color: #0056b3;
-} */
-
-
-/* Media query  */
+/* Media query */
 @media (max-width: 768px) {
   .imgText h1 {
     font-size: 20px;
-    /* Taille du texte réduite */
   }
 
   .imgText h2 {
     font-size: 16px;
-    /* Taille du texte réduite */
   }
 }
