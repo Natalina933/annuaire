@@ -12,7 +12,7 @@
 }
 
 .container:hover {
-  background-color: #34495e;
+  background-color: #05af96;
 }
 
 .icon {
@@ -22,9 +22,10 @@
 .text {
   font-weight: bold;
 }
+
 .buttonSection {
   display: flex;
-  justify-content: flex-end; 
+  justify-content: flex-end;
   margin-top: 20px;
 }
 
@@ -32,6 +33,7 @@
   display: flex;
   gap: 10px;
 }
+
 /* Styles pour tablettes */
 @media screen and (min-width: 768px) {
   .container {

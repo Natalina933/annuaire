@@ -1,7 +1,7 @@
 "use client"
 import React, { useRef } from 'react';
 import styles from './page.module.css';
-import Button from '@/components/button/Button';
+import Button from '@/components/buttons/ButtonsSection';
 import ReactToPrint from 'react-to-print';
 import ConseilList from '@/components/list/ConseilList';
 import BureauData from "../datas/ListBureau.json";
@@ -16,10 +16,10 @@ const Conseil = () => {
     <main className={styles.container} ref={componentRef}>
       <Banner />
       <section className={styles.button}>
-      <ReactToPrint
+        <ReactToPrint
           trigger={() => (
             <Button url="/">
-              <AiOutlinePrinter className={styles.printIcon}/> 
+              <AiOutlinePrinter className={styles.printIcon} />
             </Button>
           )}
           content={() => componentRef.current}
