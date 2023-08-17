@@ -1,0 +1,47 @@
+.button {
+  padding: 0.8rem 1.5rem;
+  background-color: #2d3e50;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.button:hover {
+  background-color: #05af96;
+}
+
+.icon {
+  font-size: 20px;
+}
+
+.text {
+  font-weight: bold;
+}
+
+/* Styles pour tablettes */
+@media screen and (min-width: 768px) {
+  .button {
+    font-size: 18px;
+  }
+
+  .icon {
+    font-size: 22px;
+  }
+}
+
+/* Styles pour ordinateurs */
+@media screen and (min-width: 1024px) {
+  .button {
+    font-size: 20px;
+  }
+
+  .icon {
+    font-size: 24px;
+  }
+}

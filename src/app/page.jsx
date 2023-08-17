@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import styles from './page.module.css';
 import Hero from 'public/hero.jpg';
-import Button from '@/components/buttons/ButtonsSection';
+import ButtonConnex from '@/components/buttons/ButtonConnex/ButtonConnex';
 
 export default function Home() {
   return (
@@ -13,7 +13,7 @@ export default function Home() {
       </section> <section className={styles.item}>
         <h1 className={styles.title}>Annuaire des groupements de l'Association Nationale des Officiers de Carrière en retraite - ANOCR</h1>
         <p className={styles.desc}>Découvrez les membres des bureaux régionaux de l'ANOCR</p>
-        <Button url="logs" text="Se connecter" />
+        <ButtonConnex url="logs" text="Se connecter" />
       </section>
 
 

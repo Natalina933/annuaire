@@ -1,7 +1,7 @@
 "use client"
 import React, { useRef } from 'react';
 import styles from './page.module.css';
-import Button from '@/components/buttons/ButtonsSection';
+import Button from '@/components/buttons/ButtonSection/ButtonsSection';
 import ReactToPrint from 'react-to-print';
 import ConseilList from '@/components/list/ConseilList';
 import BureauData from "../datas/ListBureau.json";
